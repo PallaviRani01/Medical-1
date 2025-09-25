@@ -301,24 +301,29 @@ body.nav-active { overflow: hidden; }
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .nav-open-btn {
   color: var(--white);
   font-size: 4rem;
+  order: 1;
 }
 
 .auth-btn {
   background-color: var(--verdigris);
   color: var(--white);
   font-weight: var(--fw-700);
-  padding: 10px 20px;
+  padding: 12px 20px;
   border: none;
   border-radius: var(--radius-6);
   cursor: pointer;
   transition: var(--transition-1);
   font-size: 1.4rem;
-  margin-right: 16px;
+  order: 5;
+  min-width: 120px;
+  text-align: center;
 }
 
 .auth-btn:hover {
@@ -338,10 +343,12 @@ body.nav-active { overflow: hidden; }
   align-items: center;
   gap: 8px;
   font-size: 1.4rem;
-  margin-right: 16px;
+  order: 4;
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+  min-width: 140px;
+  justify-content: center;
 }
 
 .disease-radar-btn::before {
@@ -399,11 +406,13 @@ body.nav-active { overflow: hidden; }
   align-items: center;
   gap: 10px;
   font-size: 1.5rem;
-  margin-right: 16px;
+  order: 2;
   position: relative;
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
   animation: emergency-glow 2s infinite alternate;
+  min-width: 100px;
+  justify-content: center;
 }
 
 @keyframes emergency-glow {
@@ -448,10 +457,12 @@ body.nav-active { overflow: hidden; }
   align-items: center;
   gap: 8px;
   font-size: 1.4rem;
-  margin-right: 16px;
+  order: 3;
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  min-width: 120px;
+  justify-content: center;
 }
 
 .medicines-btn::before {
@@ -978,9 +989,20 @@ body.nav-active { overflow: hidden; }
 
   .header .btn { display: block; }
 
-  .nav-open-btn { margin-inline-start: auto; }
+  .nav-open-btn { 
+    margin-inline-start: auto;
+    order: 6;
+  }
 
-  .header .container { gap: 40px; }
+  .header .container { 
+    gap: 20px;
+    justify-content: flex-end;
+  }
+
+  .header .btn {
+    order: 7;
+    margin-left: auto;
+  }
 
 
 
