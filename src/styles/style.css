@@ -989,20 +989,9 @@ body.nav-active { overflow: hidden; }
 
   .header .btn { display: block; }
 
-  .nav-open-btn { 
-    margin-inline-start: auto;
-    order: 6;
-  }
+  .nav-open-btn { margin-inline-start: auto; }
 
-  .header .container { 
-    gap: 20px;
-    justify-content: flex-end;
-  }
-
-  .header .btn {
-    order: 7;
-    margin-left: auto;
-  }
+  .header .container { gap: 40px; }
 
 
 
@@ -1188,7 +1177,10 @@ body.nav-active { overflow: hidden; }
     display: block;
   }
 
-  .navbar { margin-inline-start: auto; }
+  .navbar { 
+    margin-inline-start: auto;
+    order: 6;
+  }
 
   .navbar-list {
     display: flex;
@@ -1202,6 +1194,16 @@ body.nav-active { overflow: hidden; }
     font-weight: var(--fw-500);
     padding-inline: 16px;
     text-transform: capitalize;
+  }
+
+  .header .container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header .btn {
+    order: 7;
+    margin-left: 0;
   }
 
 
