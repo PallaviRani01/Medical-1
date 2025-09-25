@@ -104,7 +104,7 @@ export const translations = {
     'dadi_chatbot': 'Dadi Chat Bot',
     'ask_dadi': 'Ask Dadi about your health',
     'medical_questions_only': 'I can only answer medical and health-related questions',
-    'speak_response': 'Listen to response'
+    'speak_response': 'Listen to response',
     
     // New translations
     'medicines_products': 'Medicines & Products',
@@ -220,7 +220,7 @@ export const translations = {
     'dadi_chatbot': 'दादी चैटबॉट',
     'ask_dadi': 'दादी से अपनी सेहत के बारे में पूछें',
     'medical_questions_only': 'मैं केवल स्वास्थ्य और मेडिकल सवालों का जवाब दे सकती हूं',
-    'speak_response': 'जवाब सुनें'
+    'speak_response': 'जवाब सुनें',
     
     // New translations
     'medicines_products': 'दवाएं और उत्पाद',
